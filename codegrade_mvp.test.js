@@ -10,6 +10,7 @@ IMPORTANT NOTES 🔥
 5- If the tests crash due to a "locked migration table", stop tests and delete `test.db3` file
 6- Manual testing with Postman or HTTPie is still necessary
 */
+console.log('NODE_ENV:', process.env.NODE_ENV)
 const request = require('supertest')
 const db = require('./data/dbConfig')
 const server = require('./api/server')
